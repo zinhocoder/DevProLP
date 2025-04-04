@@ -1812,9 +1812,9 @@ export default function Home() {
                 transition={{ duration: 0.8, delay: 0.5 }}
               >
                 {[
-                  { icon: <Github className="h-5 w-5" />, url: "https://github.com" },
-                  { icon: <Linkedin className="h-5 w-5" />, url: "https://linkedin.com" },
-                  { icon: <Instagram className="h-5 w-5" />, url: "https://instagram.com" },
+                  { icon: <Github className="h-5 w-5" />, url: "https://github.com/zinhocoder" },
+                  { icon: <Linkedin className="h-5 w-5" />, url: "https://linkedin.com/in/roberto-gonçalves-899573309/" },
+                  { icon: <Instagram className="h-5 w-5" />, url: "https://instagram.com/roberto.codes" },
                 ].map((social, index) => (
                   <motion.a
                     key={index}
