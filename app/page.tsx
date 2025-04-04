@@ -1791,16 +1791,16 @@ export default function Home() {
                   <div className="h-10 w-10 rounded-full bg-pink-500/20 flex items-center justify-center group-hover:bg-pink-500/40 transition-colors">
                     <Phone className="h-5 w-5 text-pink-500" />
                   </div>
-                  <span className="group-hover:text-pink-400 transition-colors">+55 (11) 99999-9999</span>
+                  <span className="group-hover:text-pink-400 transition-colors">+55 (47) 99286-5256</span>
                 </a>
                 <a
-                  href="mailto:contato@devpro.com.br"
+                  href="mailto:contato@devpro.fun"
                   className="flex items-center gap-4 group hover:bg-purple-900/30 p-3 rounded-lg transition-colors"
                 >
                   <div className="h-10 w-10 rounded-full bg-pink-500/20 flex items-center justify-center group-hover:bg-pink-500/40 transition-colors">
                     <MessageSquare className="h-5 w-5 text-pink-500" />
                   </div>
-                  <span className="group-hover:text-pink-400 transition-colors">contato@devpro.com.br</span>
+                  <span className="group-hover:text-pink-400 transition-colors">contato@devpro.fun</span>
                 </a>
               </motion.div>
 
