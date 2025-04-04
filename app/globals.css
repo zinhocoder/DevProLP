@@ -1,0 +1,170 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 280 50% 3%;
+    --foreground: 0 0% 100%;
+
+    --card: 280 50% 3%;
+    --card-foreground: 0 0% 100%;
+
+    --popover: 280 50% 3%;
+    --popover-foreground: 0 0% 100%;
+
+    --primary: 326 100% 60%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 280 50% 20%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 280 50% 10%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 280 50% 15%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 280 50% 20%;
+    --input: 280 50% 20%;
+    --ring: 326 100% 60%;
+
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+/* Adicionar animações mais leves usando CSS puro em vez de Framer Motion */
+@keyframes simplePulse {
+  0%,
+  100% {
+    opacity: 0.7;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.3;
+    transform: scale(1.1);
+  }
+}
+
+.animate-simple-pulse {
+  animation: simplePulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* Otimizar as animações existentes */
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 0.6;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.3;
+    transform: scale(1.1);
+  }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.animate-pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* Scan line effect for monitors */
+.bg-scanline {
+  background: linear-gradient(to bottom, transparent 0%, rgba(255, 255, 255, 0.05) 50%, transparent 100%);
+  background-size: 100% 4px;
+  animation: scanline 8s linear infinite;
+}
+
+@keyframes scanline {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 0 100%;
+  }
+}
+
+/* Adicionar após as animações existentes */
+
+/* Barra de rolagem personalizada */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(139, 92, 246, 0.05);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, rgba(236, 72, 153, 0.7), rgba(139, 92, 246, 0.7));
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(to bottom, rgba(236, 72, 153, 0.9), rgba(139, 92, 246, 0.9));
+}
+
+/* Estilo para Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(236, 72, 153, 0.7) rgba(139, 92, 246, 0.05);
+}
+
+/* Estilo específico para popups com rolagem */
+.popup-scrollbar {
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(236, 72, 153, 0.7) rgba(139, 92, 246, 0.05);
+}
+
+.popup-scrollbar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.popup-scrollbar::-webkit-scrollbar-track {
+  background: rgba(139, 92, 246, 0.1);
+  border-radius: 10px;
+  margin: 4px;
+}
+
+.popup-scrollbar::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, rgba(236, 72, 153, 0.7), rgba(139, 92, 246, 0.7));
+  border-radius: 10px;
+  border: 2px solid transparent;
+  background-clip: padding-box;
+}
+
