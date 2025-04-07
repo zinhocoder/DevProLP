@@ -57,7 +57,7 @@ export default function FloatingWhatsAppButton() {
 
             {/* Botão */}
             <motion.a
-              href="https://wa.me/5511999999999?text=Olá,%20gostaria%20de%20conversar%20sobre%20um%20projeto"
+              href="https://wa.me/5547992865256?text=Olá,%20gostaria%20de%20conversar%20sobre%20um%20projeto"
               target="_blank"
               rel="noopener noreferrer"
               className="relative flex items-center justify-center h-14 w-14 bg-gradient-to-r from-pink-500 to-purple-600 rounded-full shadow-lg border border-white/20"

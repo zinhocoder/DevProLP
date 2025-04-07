@@ -419,7 +419,7 @@ export default function UiUxSection() {
             <motion.div variants={itemVariants} className="pt-4">
               <Button className="bg-pink-500 hover:bg-pink-600 text-white px-6 py-5 text-base group" asChild>
                 <a
-                  href="https://wa.me/5511999999999?text=Olá,%20gostaria%20de%20solicitar%20um%20orçamento%20para%20UI/UX%20Design"
+                  href="https://wa.me/5547992865256?text=Olá,%20gostaria%20de%20solicitar%20um%20orçamento%20para%20UI/UX%20Design"
                   target="_blank"
                   rel="noopener noreferrer"
                 >

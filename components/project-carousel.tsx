@@ -312,7 +312,7 @@ export default function ProjectCarousel() {
       <div className="text-center mt-12">
         <Button className="bg-pink-500 hover:bg-pink-600 text-white px-8 py-6 text-lg group" asChild>
           <a
-            href="https://wa.me/5511999999999?text=Olá,%20gostaria%20de%20solicitar%20um%20orçamento%20para%20um%20projeto"
+            href="https://wa.me/5547992865256?text=Olá,%20gostaria%20de%20solicitar%20um%20orçamento%20para%20um%20projeto"
             target="_blank"
             rel="noopener noreferrer"
           >
